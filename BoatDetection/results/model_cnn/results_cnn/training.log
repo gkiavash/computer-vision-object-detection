@@ -1,0 +1,100 @@
+C:\Users\ASUS\AppData\Local\Programs\Python\Python38\python.exe C:/Users/ASUS/Desktop/Project/FP_ml/pyimagesearch/fine_tune_rcnn.py
+2021-07-20 09:49:31.218092: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library cudart64_110.dll
+[INFO] loading images...
+imagePaths:  21475
+data:  21475
+labels:  21475
+trainX:  (17180, 224, 224, 3) testX:  (4295, 224, 224, 3) trainY:  (17180, 2) testY:  (4295, 2)
+WARNING:tensorflow:`input_shape` is undefined or non-square, or `rows` is not in [96, 128, 160, 192, 224]. Weights for input shape (224, 224) will be loaded as the default.
+2021-07-20 10:02:06.928488: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library nvcuda.dll
+2021-07-20 10:02:08.596332: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce GTX 1650 computeCapability: 7.5
+coreClock: 1.56GHz coreCount: 16 deviceMemorySize: 4.00GiB deviceMemoryBandwidth: 119.24GiB/s
+2021-07-20 10:02:08.599836: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library cudart64_110.dll
+2021-07-20 10:02:10.438099: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library cublas64_11.dll
+2021-07-20 10:02:10.438256: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library cublasLt64_11.dll
+2021-07-20 10:02:13.864719: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library cufft64_10.dll
+2021-07-20 10:02:13.907919: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library curand64_10.dll
+2021-07-20 10:02:14.218572: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library cusolver64_11.dll
+2021-07-20 10:02:14.527548: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library cusparse64_11.dll
+2021-07-20 10:02:14.565018: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library cudnn64_8.dll
+2021-07-20 10:02:15.392195: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2021-07-20 10:02:15.418679: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-07-20 10:02:15.440140: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce GTX 1650 computeCapability: 7.5
+coreClock: 1.56GHz coreCount: 16 deviceMemorySize: 4.00GiB deviceMemoryBandwidth: 119.24GiB/s
+2021-07-20 10:02:15.440829: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2021-07-20 10:02:20.035432: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-07-20 10:02:20.035588: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0
+2021-07-20 10:02:20.035698: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N
+2021-07-20 10:02:20.050338: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 2143 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce GTX 1650, pci bus id: 0000:01:00.0, compute capability: 7.5)
+[INFO] compiling model...
+C:\Users\ASUS\AppData\Local\Programs\Python\Python38\lib\site-packages\tensorflow\python\keras\optimizer_v2\optimizer_v2.py:374: UserWarning: The `lr` argument is deprecated, use `learning_rate` instead.
+  warnings.warn(
+[INFO] training head...
+2021-07-20 10:02:27.119157: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:176] None of the MLIR Optimization Passes are enabled (registered 2)
+Epoch 1/15
+2021-07-20 10:02:32.205488: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library cudnn64_8.dll
+2021-07-20 10:02:37.713140: I tensorflow/stream_executor/cuda/cuda_dnn.cc:359] Loaded cuDNN version 8201
+2021-07-20 10:02:45.313608: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library cublas64_11.dll
+2021-07-20 10:02:50.508381: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library cublasLt64_11.dll
+2021-07-20 10:02:52.193937: W tensorflow/core/common_runtime/bfc_allocator.cc:271] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.54GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2021-07-20 10:02:52.195458: W tensorflow/core/common_runtime/bfc_allocator.cc:271] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.54GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+134/134 [==============================] - ETA: 0s - loss: 0.0657 - accuracy: 0.97812021-07-20 10:07:14.220548: W tensorflow/core/framework/cpu_allocator_impl.cc:80] Allocation of 78876672 exceeds 10% of free system memory.
+2021-07-20 10:07:14.221863: W tensorflow/core/framework/cpu_allocator_impl.cc:80] Allocation of 78876672 exceeds 10% of free system memory.
+2021-07-20 10:07:14.226572: W tensorflow/core/framework/cpu_allocator_impl.cc:80] Allocation of 78876672 exceeds 10% of free system memory.
+2021-07-20 10:07:14.228238: W tensorflow/core/framework/cpu_allocator_impl.cc:80] Allocation of 78876672 exceeds 10% of free system memory.
+2021-07-20 10:07:14.228531: W tensorflow/core/framework/cpu_allocator_impl.cc:80] Allocation of 78876672 exceeds 10% of free system memory.
+2021-07-20 10:07:15.990014: W tensorflow/core/common_runtime/bfc_allocator.cc:271] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.57GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2021-07-20 10:07:15.991889: W tensorflow/core/common_runtime/bfc_allocator.cc:271] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.57GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2021-07-20 10:07:27.228182: W tensorflow/core/common_runtime/bfc_allocator.cc:271] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.24GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2021-07-20 10:07:27.230246: W tensorflow/core/common_runtime/bfc_allocator.cc:271] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.24GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+134/134 [==============================] - 302s 2s/step - loss: 0.0657 - accuracy: 0.9781 - val_loss: 0.0287 - val_accuracy: 0.9919
+Epoch 2/15
+134/134 [==============================] - 233s 2s/step - loss: 0.0347 - accuracy: 0.9902 - val_loss: 0.0230 - val_accuracy: 0.9935
+Epoch 3/15
+134/134 [==============================] - 246s 2s/step - loss: 0.0335 - accuracy: 0.9900 - val_loss: 0.0200 - val_accuracy: 0.9960
+Epoch 4/15
+134/134 [==============================] - 236s 2s/step - loss: 0.0303 - accuracy: 0.9906 - val_loss: 0.0217 - val_accuracy: 0.9949
+Epoch 5/15
+134/134 [==============================] - 238s 2s/step - loss: 0.0276 - accuracy: 0.9921 - val_loss: 0.0229 - val_accuracy: 0.9937
+Epoch 6/15
+134/134 [==============================] - 240s 2s/step - loss: 0.0268 - accuracy: 0.9924 - val_loss: 0.0173 - val_accuracy: 0.9951
+Epoch 7/15
+134/134 [==============================] - 235s 2s/step - loss: 0.0275 - accuracy: 0.9927 - val_loss: 0.0167 - val_accuracy: 0.9960
+Epoch 8/15
+134/134 [==============================] - 232s 2s/step - loss: 0.0265 - accuracy: 0.9926 - val_loss: 0.0158 - val_accuracy: 0.9967
+Epoch 9/15
+134/134 [==============================] - 230s 2s/step - loss: 0.0235 - accuracy: 0.9931 - val_loss: 0.0178 - val_accuracy: 0.9951
+Epoch 10/15
+134/134 [==============================] - 227s 2s/step - loss: 0.0230 - accuracy: 0.9931 - val_loss: 0.0178 - val_accuracy: 0.9956
+Epoch 11/15
+134/134 [==============================] - 239s 2s/step - loss: 0.0246 - accuracy: 0.9928 - val_loss: 0.0170 - val_accuracy: 0.9953
+Epoch 12/15
+134/134 [==============================] - 232s 2s/step - loss: 0.0223 - accuracy: 0.9941 - val_loss: 0.0158 - val_accuracy: 0.9953
+Epoch 13/15
+134/134 [==============================] - 234s 2s/step - loss: 0.0223 - accuracy: 0.9935 - val_loss: 0.0241 - val_accuracy: 0.9932
+Epoch 14/15
+134/134 [==============================] - 246s 2s/step - loss: 0.0217 - accuracy: 0.9934 - val_loss: 0.0162 - val_accuracy: 0.9960
+Epoch 15/15
+134/134 [==============================] - 233s 2s/step - loss: 0.0213 - accuracy: 0.9937 - val_loss: 0.0170 - val_accuracy: 0.9963
+[INFO] evaluating network...
+              precision    recall  f1-score   support
+
+        boat       0.99      1.00      1.00      2095
+     no_boat       1.00      0.99      1.00      2200
+
+    accuracy                           1.00      4295
+   macro avg       1.00      1.00      1.00      4295
+weighted avg       1.00      1.00      1.00      4295
+
+[INFO] saving mask detector model...
+2021-07-20 11:02:56.354265: W tensorflow/python/util/util.cc:348] Sets are not currently considered sequences, but this may change in the future, so consider avoiding using them.
+C:\Users\ASUS\AppData\Local\Programs\Python\Python38\lib\site-packages\tensorflow\python\keras\utils\generic_utils.py:494: CustomMaskWarning: Custom mask layers require a config and must override get_config. When loading, the custom mask layer must be passed to the custom_objects argument.
+  warnings.warn('Custom mask layers require a config and must override '
+[INFO] saving label encoder...
+
+Process finished with exit code 0
+
+
